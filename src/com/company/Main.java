@@ -70,11 +70,22 @@ public class Main {
     }
 
     public static void task2_4() {
-
+        int friday = 3;
+        for (int i = friday; i <= 31; i += 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+            friday += 7;
+        }
     }
 
     public static void task3_1() {
-
+        int currentYear = 2022;
+        int startOfPeriod = currentYear - 200;
+        int finishOfPeriod = currentYear + 79;
+        for (int year = 0; year <= finishOfPeriod; year += 79) {
+            if (year > startOfPeriod) {
+                System.out.println(year);
+            }
+        }
     }
 
     public static void task3_2() {
